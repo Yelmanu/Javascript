@@ -13,3 +13,9 @@ function ejercicio1(){
 	document.write(alumnoUno instanceof alumno);
 }
 
+function preguntaTeoria(){
+	let texto = "No soy un número";
+	let conversion= Number(texto);
+	document.write(typeof(conversion) + " " + conversion);
+}
+
