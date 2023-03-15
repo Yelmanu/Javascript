@@ -3,18 +3,17 @@
  */
 
  class segmento{
-	 constructor(a, b){
-		 this.a = a;
-		 this.b = b;
+	 constructor(inicio, fin){
+		 this.inicio = inicio;
+		 this.fin = fin;
 	 }
-	 get codigoSegmento(){
-	 return this.calculoSegmento;
- 	}
+	 
+	 calculoSegmento(){
+		 return this.inicio-this.fin;
+	 }
  
- 	calculoSegmento(){
-		 return this.a-this.b;
-	 }
  }
  
- let tamanyoSegmento = new segmento(10, 9);
- document.write(tamanyoSegmento);
+ var cacho = new segmento(5, 15);
+ let tamanyoSegmento = cacho.calculoSegmento();
+ console.log(tamanyoSegmento);
